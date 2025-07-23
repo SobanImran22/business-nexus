@@ -6,6 +6,7 @@ import EntrepreneurDashboard from "./pages/dashboard/EntrepreneurDashboard";
 import EntrepreneurProfile from "./pages/profile/EntrepreneurProfile";
 import InvestorProfile from "./pages/profile/InvestorProfile";
 import Home from './HomePage';
+import ChatPage from "./pages/ChatPage";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/dashboard/entrepreneur" element={<EntrepreneurDashboard />} />
         <Route path="/profile/entrepreneur/:id" element={<EntrepreneurProfile />} />
         <Route path="/profile/investor/:id" element={<InvestorProfile />} />
+        <Route path="/chat/:userId" element={<ChatPage />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
